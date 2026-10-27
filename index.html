@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Chimarrão</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eeeeee;
+        }
+
+        header {
+            background: darkgreen;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        nav {
+            background: #222;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        main {
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .sobre {
+            margin: 30px 0;
+            text-align: justify;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 250px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .card h3, .card p {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: darkgreen;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: auto;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #004d00;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 768px) {
+            nav {
+                flex-direction: row;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .banner img {
+                height: 280px;
+            }
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .banner img {
+                height: 350px;
+            }
+
+            .cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            button {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Portal do Chimarrão</h1>
+        <p>A tradição que aquece o Sul do Brasil.</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">História</a>
+        <a href="#">Tipos</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main>
+
+        <section class="banner">
+            <img src="https://picsum.photos/1200/350" alt="Banner">
+        </section>
+
+        <section class="sobre">
+            <h2>O Chimarrão</h2>
+            <p>
+                O chimarrão é uma bebida tradicional preparada com erva-mate,
+                água quente e uma bomba metálica. Muito presente na cultura do
+                sul do Brasil, também faz parte da tradição de países como
+                Argentina, Paraguai e Uruguai.
+            </p>
+        </section>
+
+        <section class="cards">
+
+            <article class="card">
+                <img src="https://picsum.photos/250/180?1" alt="Erva-Mate">
+                <h3>Erva-Mate</h3>
+                <p>Conheça os diferentes tipos de erva utilizados no preparo.</p>
+                <button>Saiba mais</button>
+            </article>
+
+            <article class="card">
+                <img src="https://picsum.photos/250/180?2" alt="Cuia">
+                <h3>Cuia</h3>
+                <p>As cuias podem ser feitas de porongo, madeira ou cerâmica.</p>
+                <button>Saiba mais</button>
+            </article>
+
+            <article class="card">
+                <img src="https://picsum.photos/250/180?3" alt="Bomba">
+                <h3>Bomba</h3>
+                <p>Existem diversos modelos e materiais para a bomba.</p>
+                <button>Saiba mais</button>
+            </article>
+
+            <article class="card">
+                <img src="https://picsum.photos/250/180?4" alt="Água">
+                <h3>Água</h3>
+                <p>A temperatura ideal fica entre 70°C e 80°C.</p>
+                <button>Saiba mais</button>
+            </article>
+
+            <article class="card">
+                <img src="https://picsum.photos/250/180?5" alt="Tradição">
+                <h3>Tradição</h3>
+                <p>Compartilhar o chimarrão é um símbolo de amizade.</p>
+                <button>Saiba mais</button>
+            </article>
+
+            <article class="card">
+                <img src="https://picsum.photos/250/180?6" alt="Curiosidades">
+                <h3>Curiosidades</h3>
+                <p>Descubra fatos interessantes sobre a cultura gaúcha.</p>
+                <button>Saiba mais</button>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Portal do Chimarrão - Desenvolvimento Web</p>
+        <p>2026</p>
+    </footer>
+
+</body>
+
+</html>
